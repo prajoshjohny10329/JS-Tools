@@ -7,8 +7,8 @@ const inputDir = path.join(__dirname, 'input');
 const outputDir = path.join(__dirname, 'output');
 
 // Desired dimensions
-const width = 564;
-const height = 902;
+const width = 1440;
+const height = 960;
 
 // Function to resize a single image
 const resizeImage = async (inputPath, outputPath, width, height) => {
