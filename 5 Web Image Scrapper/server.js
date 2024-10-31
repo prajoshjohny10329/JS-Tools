@@ -7,6 +7,7 @@ const path = require('path');
 const url  = 'https://chiramelauditorium.in/'
 
  fetchImage = async ()=>{
+    console.log('running');
     try {
         // Fetch HTML content from the URL
         const { data: html } = await axios.get(url);

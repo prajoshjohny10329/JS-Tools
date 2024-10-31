@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const imageDir = path.join(__dirname, 'Input');
+const imageDir = path.join(__dirname, 'input');
 const outputFilePath = path.join(__dirname, '/Output/images.json');
 
 fs.readdir(imageDir, (err, files) => {
