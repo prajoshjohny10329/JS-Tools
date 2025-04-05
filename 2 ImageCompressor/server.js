@@ -24,7 +24,7 @@ fs.readdir(inputDirectory, (err, files) => {
         if (imageExtensions.includes(path.extname(file).toLowerCase())) {
             sharp(inputFilePath)
                 .resize({ width: 1500 }) // Resize the image to a width of 800px
-                .toFormat('jpeg', { quality: 80 }) // Compress the image with 80% quality
+                .toFormat('jpeg', { quality: 98 }) // Compress the image with 80% quality
                 .toFile(outputFilePath, (err, info) => {
                     if (err) {
                         console.log(`Error compressing file ${file}:`, err);
